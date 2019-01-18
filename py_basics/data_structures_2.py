@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # ----------------------------------------------------------
 # LISTS
 # List are also ordered sequences
@@ -37,8 +39,51 @@ for i in new_list:
     print(i)
 
 # instead of creating a new list we can work with the original one
+# a list addition will result into one list
 new_list.extend(["PooP", "___", 10, "0xFF"])
 
-for i in new_list:
-    print(i, end=" ")
-print("\n")
+def printList(my_list):
+    for i in my_list:
+        print(i, end = " ")
+    print("\n")
+
+printList(new_list)
+
+# here we are just including a new element, but not adding
+# two or more lists
+new_list.append("APPEND")
+
+printList(new_list)
+
+#changing the last element in the list
+new_list[-1] = "CHANGED"
+
+printList(new_list)
+
+#deleting an element from the list
+print("Deleting element: ")
+del(new_list[0])
+printList(new_list)
+del(new_list[0])
+printList(new_list)
+
+# SPlit method
+print("Splitting: ")
+my_string = "Hard Rock Coffee"
+rock_list = my_string.split(" ")
+print(rock_list)
+
+# Aliasing
+print("Aliasing: ")
+rock_alias = rock_list
+print(rock_alias)
+rock_alias[0] = ":B"
+print(rock_list)
+
+#list cloning
+print("List clonning: ")
+rock_clone = rock_list[:]
+print(rock_clone)
+rock_clone.append("banana")
+print("rock original:{}".format(rock_list))
+print("rock clone: {}".format(rock_clone))

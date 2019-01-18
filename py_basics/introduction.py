@@ -71,7 +71,7 @@ space = 0
 for i in range(len(some_name)):
     if some_name[i] == " ":
         space = i
-        break;
+        break
 print("space is {}".format(space))
 print(some_name[0:7])
 
