@@ -1,6 +1,7 @@
 # LIST AND TUPLES
 
-#Tuples
+# TUPLES
+
 # it is inmutable 
 ratings = (10, 10, 9, 8, 7, 6, 5, 5, 4, 3, 2, 1)
 for i in range(len(ratings)):
@@ -56,3 +57,5 @@ def tuple_in_tuple(my_tuple):
             print(my_tuple[i])
 
 tuple_in_tuple(tuples_t)
+
+print("Element deeply nested: {}".format(tuples_t[3][2][2][3]))
