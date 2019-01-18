@@ -127,4 +127,20 @@ lower_phrase = upper_phrase.lower()
 print(lower_phrase)
 
 #replace
-print("Replace method")
+print("Replace method: ")
+# to be replace, new value to be assigned
+replaced_phrase = a_good_phrase.replace(" ", "-")
+print(replaced_phrase)
+
+name = "Eduardo Rasgado"
+
+#find
+print("Find: ")
+found_e = name.find("as")
+
+print(found_e)
+
+if found_e != -1:
+    print(name[found_e:11])
+else:
+    print("NOT FOUND")
