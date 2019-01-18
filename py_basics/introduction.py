@@ -74,3 +74,57 @@ for i in range(len(some_name)):
         break;
 print("space is {}".format(space))
 print(some_name[0:7])
+
+# STRIDE: slicing with a range
+# printing each 2 letters
+print(some_name[::2])
+
+#printing each 2 lette until get the 7th element in the string
+print(some_name[:7:2])
+
+somename_3 = some_name*3
+print(somename_3)
+
+# strings in python are inmutable
+# this is permitted
+some_name = "ssssss"
+print(some_name)
+
+#this is not
+#some_name[3] = "s"
+
+# Escape sequences
+
+print("Mozart is \tthe best")
+print("Mozart is \n the best")
+print("Mozart is \\the best")
+print(r"Mozart is the best")
+
+# STRING METHODS =======================
+print("--------------------------------")
+#Sequence methods and string methods
+
+a_good_phrase = "Thriller us the sxth studio album"
+
+# split method
+print("Split: ")
+phrase_list = a_good_phrase.split(" ")
+for i in phrase_list:
+    print(i)
+
+# join method
+print("Join: ")
+phrase_string_again = " ".join(phrase_list)
+print(phrase_string_again)
+
+# upper method
+print("Upper: ")
+upper_phrase = a_good_phrase.upper()
+print(upper_phrase)
+
+print("LOwer: ")
+lower_phrase = upper_phrase.lower()
+print(lower_phrase)
+
+#replace
+print("Replace method")
